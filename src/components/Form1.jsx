@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/Form1.css"
 
 import {
   MDBBtn,
@@ -17,7 +18,7 @@ function Form1() {
   return (
     <MDBContainer fluid>
 
-      <div className="p-5 bg-image" style={{backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px'}}></div>
+      <div className="Vatsal" style={{backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px'}}></div>
 
       <MDBCard className='mx-5 mb-5 p-5 shadow-5' style={{marginTop: '-100px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
         <MDBCardBody className='p-5 text-center'>
@@ -25,7 +26,7 @@ function Form1() {
           <h2 className="fw-bold mb-5">Sign up now</h2>
 
           <MDBRow>
-            <MDBCol col='6'>
+            <MDBCol col='3'>
               <MDBInput wrapperClass='mb-4' label='First name' id='form1' type='text'/>
             </MDBCol>
 

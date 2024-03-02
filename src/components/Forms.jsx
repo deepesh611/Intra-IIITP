@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/Forms.css"
 import {
   MDBBtn,
   MDBContainer,
@@ -14,13 +15,13 @@ from 'mdb-react-ui-kit';
 
 function Forms() {
   return (
-    <MDBContainer className="my-5">
+    <MDBContainer className="nikhil">
 
       <MDBCard>
         <MDBRow className='g-0'>
 
           <MDBCol md='6'>
-            <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp' alt="login form" className='rounded-start w-100'/>
+            <MDBCardImage src="src\\assets\\SignIn_img.png" alt="login form" className='signInphoto'/>
           </MDBCol>
 
           <MDBCol md='6'>
