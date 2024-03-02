@@ -14,6 +14,8 @@ import ProductReviews from "./components/ProductReviews.jsx"
 import Banner from "./components/Banner.jsx"
 import Footer from "./components/Footer.jsx"
 import NavOptios from "./components/NavOptios.jsx"
+import Forms from './components/Forms.jsx';
+
 
 
 
@@ -22,6 +24,10 @@ function App() {
   return (
   <Router>
        <PreNavbar/>
+       <Routes>
+          {/* <Route path="/" exact component={HomePage} /> */}
+          <Route excat path="/signin"  element={<Forms/>} />
+          </Routes>
        <Navbar />
             
         <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop} fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio}  accessories={data.accessories}/>
