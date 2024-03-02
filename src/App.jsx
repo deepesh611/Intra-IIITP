@@ -184,7 +184,7 @@
 
 import './App.css';
 import PreNavbar from './components/PreNavbar';
-import Navbar from "./components/Navbar.jsx"
+// import Navbar from "./components/Navbar.jsx"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Slider from "./components/Slider.jsx"
 import data from "./data/data.json"
@@ -198,6 +198,7 @@ import Footer from "./components/Footer.jsx"
 import NavOptios from "./components/NavOptios.jsx"
 import Forms from './components/Forms.jsx';
 import Form1 from './components/Form1.jsx';
+import Page2 from './components/Page2.jsx';
 // import Form1 from './components/Form1.jsx';
 
 function App() {
@@ -209,6 +210,7 @@ function App() {
         <Route exact path="/signin" element={<Forms />} />
         {/* <Route exact path="/signup" element={<Form1 />} /> */}
         <Route exact path="/signup" element={<Form1 />} ></Route>
+        <Route exact path="/register" element={<Page2 />} ></Route>
         <Route path="*" element={<DefaultLayout />} />
       </Routes>
       </Router>
@@ -222,7 +224,7 @@ const DefaultLayout = () => {
   return (
     <>
      <PreNavbar/>
-      <Navbar />
+      {/* <Navbar /> */}
       <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop} fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio}  accessories={data.accessories}/>
       <Slider start={data.banner.start} />
       <Offers offer={data.offer} />
