@@ -7,7 +7,7 @@ import data from "./data/data.json"
 import Offers from "./components/Offers.jsx"
 import Heading  from "./components/Heading.jsx"
 import StarProduct from "./components/StarProduct.jsx"
-import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.jsx"
+// import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.jsx"
 import HotAccessories from "./components/HotAccessories.jsx"
 import ProductReviews from "./components/ProductReviews.jsx"
 // import Videos from "./components/Videos.js"
@@ -32,7 +32,7 @@ function App() {
        <Heading text="STAR PRODUCTS"/>
        <StarProduct starProduct={data.starProduct} />
        <Heading text="HOT ACCESSORIES" />
-       <HotAccessoriesMenu />
+       {/* <HotAccessoriesMenu /> */}
 
        <Routes>
 
