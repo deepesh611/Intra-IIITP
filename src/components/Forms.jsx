@@ -20,13 +20,8 @@ function Forms() {
       <MDBCard>
         <MDBRow className='g-0'>
 
-<<<<<<< HEAD
           <MDBCol md='6'>
             <MDBCardImage src="src\\assets\\SignIn_img.png" alt="login form" className='signInphoto'/>
-=======
-          <MDBCol md='4'>
-            <MDBCardImage src="https://www.pngmart.com/files/7/Blood-Donation-PNG-Picture-255x279.png" alt="login form" className='form-logo'  />
->>>>>>> f1101601e5a680356fdadf02d808b77c23de6c1a
           </MDBCol>
 
           <MDBCol md='6'>
