@@ -17,12 +17,12 @@ function Form1() {
   return (
     <MDBContainer fluid>
 
-      <div className="p-5 bg-image" style={{backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px'}}></div>
+      <div className="p-5 bg-image" style={{marginTop: '-50px',backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px'}}></div>
 
-      <MDBCard className='mx-5 mb-5 p-5 shadow-5' style={{marginTop: '-100px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
-        <MDBCardBody className='p-5 text-center'>
+      <MDBCard className='mx-5 mb-5 p-5 shadow-5' style={{maxWidth:"50%" ,marginTop: '-250px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
+        <MDBCardBody className='p-5 text-left'>
 
-          <h2 className="fw-bold mb-5">Sign up now</h2>
+          <h2 className="fw-bold mb-3">Sign up now</h2>
 
           <MDBRow>
             <MDBCol col='6'>
@@ -41,7 +41,7 @@ function Form1() {
             <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
           </div>
 
-          <MDBBtn className='w-100 mb-4' size='md'>sign up</MDBBtn>
+          <MDBBtn className='w-30 mb-4' size='md'>sign up</MDBBtn>
 
           <div className="text-center">
 
