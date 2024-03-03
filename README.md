@@ -21,7 +21,7 @@ Welcome to our blood donation website! This platform is designed to facilitate b
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/deepesh611/Intra-IIITP.git`
 2. Navigate to the project directory: `cd blood-donation-website`
 3. Install dependencies: `npm install`
 4. Set up the MySQL database with the required schema and tables.
