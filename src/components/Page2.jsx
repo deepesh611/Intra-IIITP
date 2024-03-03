@@ -18,7 +18,7 @@ export default function () {
       <MDBCol>
         <MDBCard className='h-100'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+            src='https://voicetrustmadurai.org/wp-content/uploads/2022/03/Blood-Donation-1.jpg'
             alt='...'
             position='top'
           />
@@ -36,7 +36,7 @@ export default function () {
       <MDBCol >
         <MDBCard className='h-100'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='https://www.friends2support.org/imgs/landingpage/blood_drop_search.gif'
             alt='...'
             position='top'
           />
