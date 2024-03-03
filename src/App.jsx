@@ -41,10 +41,10 @@
 //        <Routes>
 //           {/* <Route path="/" exact component={HomePage} /> */}
 //           <Route excat path="/signin"  element={<Forms/>} />
-
+          
 //           </Routes>
 //        <Navbar />
-
+            
 //         <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop} fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio}  accessories={data.accessories}/>
 
 
@@ -77,7 +77,7 @@
 
 
 
-
+  
 
 
 //        <Heading text="PRODUCT REVIEWS"/>
@@ -85,11 +85,11 @@
 //        <ProductReviews productReviews={data.productReviews}/>
 
 //        {/* <Heading text="VIDEOS" />
-
+      
 //       <Videos videos={data.videos} /> */}
 
 //       <Heading  text="IN THE PRESS"/>
-
+   
 //        <Banner  banner={data.banner}/>
 
 //        <Footer footer={data.footer} />
@@ -139,7 +139,7 @@
 //       </Routes>
 //       )
 //       }
-
+      
 //       const DefaultLayout = () => {
 // return(
 //       <>
@@ -190,46 +190,49 @@ import Slider from "./components/Slider.jsx"
 import data from "./data/data.json"
 import Offers from "./components/Offers.jsx"
 import Heading from "./components/Heading.jsx"
-import StarProduct from "./components/StarProduct.jsx"
+// import StarProduct from "./components/StarProduct.jsx"
 // import HotAccessories from "./components/HotAccessories.jsx"
-import ProductReviews from "./components/ProductReviews.jsx"
+// import ProductReviews from "./components/ProductReviews.jsx"
 import Banner from "./components/Banner.jsx"
 import Footer from "./components/Footer.jsx"
 // import NavOptios from "./components/NavOptios.jsx"
 import Forms from './components/Forms.jsx';
 import Form1 from './components/Form1.jsx';
 import Page2 from './components/Page2.jsx';
+// import MyComponent from './components/Data retrival.jsx';
 // import Form1 from './components/Form1.jsx';
+
 
 function App() {
   return (
-
+  
     <Router>
-
+     
       <Routes>
         <Route exact path="/signin" element={<Forms />} />
         {/* <Route exact path="/signup" element={<Form1 />} /> */}
         <Route exact path="/signup" element={<Form1 />} ></Route>
         <Route exact path="/register" element={<Page2 />} ></Route>
+        {/* <Route exact path="/chat" element={<MyComponent />} ></Route> */}
         <Route path="*" element={<DefaultLayout />} />
       </Routes>
-    </Router>
+      </Router>
 
-
-
+     
+    
   );
 }
 
 const DefaultLayout = () => {
   return (
     <>
-      <PreNavbar />
+     <PreNavbar/>
       {/* <Navbar /> */}
       {/* <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop} fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio}  accessories={data.accessories}/> */}
       <Slider start={data.banner.start} />
       <Offers offer={data.offer} />
-      <Heading text="STAR PRODUCTS" />
-      <StarProduct starProduct={data.starProduct} />
+      {/* <Heading text="STAR PRODUCTS"/>
+      <StarProduct starProduct={data.starProduct} /> */}
       {/* <Heading text="HOT ACCESSORIES" />
       <Routes>
         <Route exact path="/music"  element = {<HotAccessories music = {data.hotAccessories.music} musicCover = {data.hotAccessoriesCover.music}/>}/>
@@ -246,10 +249,10 @@ const DefaultLayout = () => {
       <Routes>
         <Route exact path="/mobileAccessories" element={ <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />} />
       </Routes> */}
-      <Heading text="PRODUCT REVIEWS" />
-      <ProductReviews productReviews={data.productReviews} />
-      <Heading text="IN THE PRESS" />
-      <Banner banner={data.banner} />
+      {/* <Heading text="PRODUCT REVIEWS"/>
+      <ProductReviews productReviews={data.productReviews}/> */}
+      <Heading  text="NEWS OUTLETS REPORTED"/>
+      <Banner  banner={data.banner}/>
       <Footer footer={data.footer} />
     </>
   );
