@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { useState } from 'react';
+import Axios from 'axios';  
 import {
   MDBBtn,
   MDBContainer,
@@ -13,7 +14,23 @@ import {
 }
 from 'mdb-react-ui-kit';
 
+
+
 function Form1() {
+  const [firstname, setfirstname] = useState('');
+  const [lastname, setlastname] = useState ('');
+  const [email, setemail] = useState('');
+  const [password, setpassword] = useState ('');
+  const register = () => {
+    Axios.post('http://localhost:3001/register', {
+      firstname: firstname,
+      lastname: lastname,
+      email: email,
+      password: password,
+     }).then((response) => {
+        console.log(response.data.message);
+     });
+   };
   return (
     <MDBContainer fluid>
 
@@ -26,22 +43,30 @@ function Form1() {
 
           <MDBRow>
             <MDBCol col='6'>
-              <MDBInput wrapperClass='mb-4' label='First name' id='form1' type='text'/>
+              <MDBInput wrapperClass='mb-4' label='First name' id='form1' type='text' onChange={(e) => {
+                  setfirstname(e.target.value);
+               }} />
             </MDBCol>
 
             <MDBCol col='6'>
-              <MDBInput wrapperClass='mb-4' label='Last name' id='form1' type='text'/>
+              <MDBInput wrapperClass='mb-4' label='Last name' id='form1' type='text' onChange={(e) => {
+                  setlastname(e.target.value);
+               }} />
             </MDBCol>
           </MDBRow>
 
-          <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/>
+          <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email' onChange={(e) => {
+                  setemail(e.target.value);
+               }} />
+          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password' onChange={(e) => {
+                  setpassword(e.target.value);
+               }} />
 
           <div className='d-flex justify-content-center mb-4'>
             <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
           </div>
 
-          <MDBBtn className='w-30 mb-4' size='md'>sign up</MDBBtn>
+          <MDBBtn className='w-30 mb-4' size='md' onClick={register}>sign up</MDBBtn>
 
           <div className="text-center">
 
@@ -71,6 +96,7 @@ function Form1() {
     </MDBContainer>
   );
 }
+
 
 export default Form1;
 
