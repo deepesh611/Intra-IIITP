@@ -36,7 +36,7 @@ function Form1() {
 
       <div className="p-5 bg-image" style={{marginTop: '-50px',backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px'}}></div>
 
-      <MDBCard className='mx-5 mb-5 p-5 shadow-5' style={{maxWidth:"50%" ,marginTop: '-250px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
+      <MDBCard className='mx-5 mb-5 p-5 shadow-5' style={{marginTop: '-250px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
         <MDBCardBody className='p-5 text-left'>
 
           <h2 className="fw-bold mb-3">Sign up now</h2>
@@ -63,14 +63,15 @@ function Form1() {
                }} />
 
           <div className='d-flex justify-content-center mb-4'>
-            <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
+            {/* <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' /> */}
+            <MDBBtn className='w-30 mb-4' size='lg' onClick={register}>Sign Up</MDBBtn>
           </div>
 
-          <MDBBtn className='w-30 mb-4' size='md' onClick={register}>sign up</MDBBtn>
+          
 
           <div className="text-center">
 
-            <p>or sign up with:</p>
+            {/* <p>or sign up with:</p> */}
 
             <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
               <MDBIcon fab icon='facebook-f' size="sm"/>
