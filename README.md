@@ -25,7 +25,7 @@ To set up the project locally, follow these steps:
 2. Navigate to the project directory: `cd blood-donation-website`
 3. Install dependencies: `npm install`
 4. Set up the MySQL database with the required schema and tables.
-5. Start the backend server: `npm run server`
+5. Start the backend server: `npm run start:server`
 6. Start the frontend development server: `npm run start`
 
 That's it! You should now be able to access the blood donation website locally at `http://localhost:3000`.
