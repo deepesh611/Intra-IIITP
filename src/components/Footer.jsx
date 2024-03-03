@@ -233,7 +233,7 @@ const Footer = (props) => {
 
       </div>
       <div className="footerBorder">
-        <div> Copyright © 2024 - 2025 Code Squanchers. All Rights Reserved</div>
+        <div> Copyright © 2024 - 2025 Team Explorers. All Rights Reserved</div>
       </div>
     </>
   );
