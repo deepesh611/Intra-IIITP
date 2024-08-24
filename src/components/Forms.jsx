@@ -20,7 +20,7 @@ function Forms() {
   const [loginStatus, setLoginStatus] = useState("");
   const [loggedIn, isLoggedIn] = useState(false);
   const login = () => {
-    Axios.post("http://localhost:3001/login", {
+    Axios.post("http://localhost:3003/login", {
       email: email,
       password: password,
     }).then((response) => {
@@ -117,56 +117,3 @@ function Forms() {
 
 export default Forms;
 
-// import React, { useState } from 'react';
-// import firebase from 'firebase/app';
-// import 'firebase/auth';
-// import {
-//   MDBBtn,
-//   MDBContainer,
-//   MDBCard,
-//   MDBCardBody,
-//   MDBCardImage,
-//   MDBRow,
-//   MDBCol,
-//   MDBIcon,
-//   MDBInput
-// } from 'mdb-react-ui-kit';
-
-// function Forms() {
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
-
-//   const handleLogin = async () => {
-//     try {
-//       await firebase.auth().signInWithEmailAndPassword(email, password);
-//       // User successfully logged in
-//       console.log('User logged in');
-//     } catch (error) {
-//       // Handle login errors
-//       console.error('Error signing in:', error.message);
-//     }
-//   };
-
-//   return (
-//     <MDBContainer className="my-5">
-//       <MDBCard>
-//         <MDBRow className='g-0'>
-//           <MDBCol md='6'>
-//             <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp' alt="login form" className='rounded-start w-100'/>
-//           </MDBCol>
-//           <MDBCol md='6'>
-//             <MDBCardBody className='d-flex flex-column'>
-//               {/* Your form content */}
-//               <MDBInput wrapperClass='mb-4' label='Email address' id='email' type='email' size="lg" value={email} onChange={(e) => setEmail(e.target.value)} />
-//               <MDBInput wrapperClass='mb-4' label='Password' id='password' type='password' size="lg" value={password} onChange={(e) => setPassword(e.target.value)} />
-//               <MDBBtn className="mb-4 px-5" color='dark' size='lg' onClick={handleLogin}>Login</MDBBtn>
-//               {/* Forgot password, registration link, etc. */}
-//             </MDBCardBody>
-//           </MDBCol>
-//         </MDBRow>
-//       </MDBCard>
-//     </MDBContainer>
-//   );
-// }
-
-// export default Forms;
