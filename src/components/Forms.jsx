@@ -20,7 +20,7 @@ function Forms() {
   const [loginStatus, setLoginStatus] = useState("");
   const [loggedIn, isLoggedIn] = useState(false);
   const login = () => {
-    Axios.post("http://localhost:3003/login", {
+    Axios.post("http://localhost:3003/signin", {
       email: email,
       password: password,
     }).then((response) => {
